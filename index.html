@@ -1,0 +1,795 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SHIBA WORLD</title>
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./icon/bal%201.svg">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./imgaes/bal.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" integrity="sha384-a5z5r2GJ8WF8ae6TN6yR/Kzg8Y0C9tm1KVZbFVpFgHpWQe7VvTMFd4fcOjMQiStv" crossorigin="anonymous">
+
+</head>
+
+
+
+<body>
+
+  <!-- 헤더 섹션 시작 -->
+
+  <header>
+
+    <!-- 내비게이션 바 설정 -->
+
+    <nav>
+      <div class="navbar">
+        <div class="container nav-container">
+          <input class="checkbox" type="checkbox" name="checkbox" id="checkbox">
+
+          <!-- 햄버거 메뉴 설정 -->
+
+          <div class="hamburger-lines">
+            <span class="line line1"></span>
+            <span class="line line2"></span>
+            <span class="line line3"></span>
+          </div>
+
+          <!-- 로고 설정 -->
+
+          <div class="logo">
+
+            <h4>SHIBA</h4>
+
+          </div>
+
+          <!-- 메뉴 항목 설정 -->
+
+          <div class="menu-items">
+            <ul>
+              <li><a href="#">HOME</a></li>
+              <li><a href="#">ABOUT</a></li>
+              <li><a href="#">BLOG</a></li>
+              <li><a href="#">PORTFOLIO</a></li>
+              <li><a href="#">CONTACT</a></li>
+            </ul>
+          </div>
+
+        <!-- 애니메이션 텍스트 설정 -->
+
+        <div class="animated-text">
+          <div class="line4">Hi Guys</div>
+          <div class="line4">Welcome</div>
+          <div class="line4">In This</div>
+          <div class="line4">SHIBA WORD</div>
+        </div>
+      </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- WebGL 캔버스 및 로딩 바 설정 -->
+
+  <canvas class="webgl"></canvas>
+  <div class="loading-bar"></div>
+
+  <!-- 사용자 지정 커서 설정 -->
+
+  <div id="custom_cursor" class="custom-cursor">
+    <div class="custom-cursor-icon"></div>
+  </div>
+
+  <!-- 네비게이션 콘텐츠 설정 -->
+
+  <div class="nav-content">
+    <div class="toggle-btn">
+      <i class='bx bx-plus'></i>
+    </div>
+
+    <!-- 네비게이션 아이콘 및 링크 설정 -->
+
+    <span style="--i:1;">
+      <a href="#"><i class='bx bxs-home'></i></a>
+    </span>
+    <span style="--i:2;">
+      <a href="#"><i class='bx bxs-camera'></i></a>
+    </span>
+    <span style="--i:3;">
+      <a href="#"><i class='bx bxs-alarm'></i></a>
+    </span>
+    <span style="--i:4;">
+      <a href="#"><i class='bx bxs-map'></i></a>
+    </span>
+    <span style="--i:5;">
+      <a href="#"><i class='bx bxs-cog'></i></a>
+    </span>
+  </div>
+
+  <!-- 여백 -->
+  <section class="zero">
+    <h2 class="visually-hidden">여백</h2>
+    <div class="container">
+      <h2 class="visually-hidden">여백</h2>
+    <div class="icon">
+      <div class="arrow1"></div>
+    </div>
+  </div>
+  </section>
+  <!-- 여백끝 -->
+
+  <!-- 첫 번째 섹션 -->
+
+  <section class="one">
+    <h2 class="visually-hidden">여백</h2>
+    <div class="container">
+      <div class="hero" data-aos="zoom-in" data-aos-duration="1000" data-aos-once="true">
+        <h2 data-aos="slide-right" data-aos-duration="1000" data-aos-once="true">SHIBA INU 柴犬</h2>
+        <h3 data-aos="slide-right" data-aos-duration="2000" data-aos-once="true">The Love Amplifier, Shiba!</h3>
+        <h5 data-aos="slide-right" data-aos-duration="2000" data-aos-once="true">
+          <strong>시바견은 일본에서 온 귀여운 작은 개로 여우와 비슷한 외모로 많은 사람들의 마음을 사로잡습니다.<br>
+              그들의 귀여움과 매혹적인 매력은 세계의 개 애호가들에게 사랑받고 있습니다.</strong></h5>
+      </div>
+      <form class="form" data-aos="slide-left" data-aos-duration="1000" data-aos-once="true">
+        <p id="heading">Login</p>
+        <div class="field">
+        <svg class="input-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+        <path d="M13.106 7.222c0-2.967-2.249-5.032-5.482-5.032-3.35 0-5.646 2.318-5.646 5.702 0 3.493 2.235 5.708 5.762 5.708.862 0 1.689-.123 2.304-.335v-.862c-.43.199-1.354.328-2.29.328-2.926 0-4.813-1.88-4.813-4.798 0-2.844 1.921-4.881 4.594-4.881 2.735 0 4.608 1.688 4.608 4.156 0 1.682-.554 2.769-1.416 2.769-.492 0-.772-.28-.772-.76V5.206H8.923v.834h-.11c-.266-.595-.881-.964-1.6-.964-1.4 0-2.378 1.162-2.378 2.823 0 1.737.957 2.906 2.379 2.906.8 0 1.415-.39 1.709-1.087h.11c.081.67.703 1.148 1.503 1.148 1.572 0 2.57-1.415 2.57-3.643zm-7.177.704c0-1.197.54-1.907 1.456-1.907.93 0 1.524.738 1.524 1.907S8.308 9.84 7.371 9.84c-.895 0-1.442-.725-1.442-1.914z"></path>
+        </svg>
+          <input autocomplete="off" placeholder="Username" class="input-field" type="text">
+        </div>
+        <div class="field">
+        <svg class="input-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+        <path d="M8 1a2 2 0 0 1 2 2v4H6V3a2 2 0 0 1 2-2zm3 6V3a3 3 0 0 0-6 0v4a2 2 0 0 0-2 2v5a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2z"></path>
+        </svg>
+          <input placeholder="Password" class="input-field" type="password">
+        </div>
+        <div class="btn">
+        <button class="button1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Login&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</button>
+        <button class="button2">Sign Up</button>
+        </div>
+        <button class="button3">Forgot Password</button>
+    </form>
+    </div>
+  </section>
+
+  <!-- 두 번째 섹션 -->
+
+  <section class="two">
+    <h2 class="visually-hidden">여백</h2>
+    <div class="container">
+      <div class="hero2">
+        <h2 data-aos="slide-left" data-aos-duration="1000" data-aos-once="true">SHIBA INU 柴犬 분양</h2>
+        <h3 data-aos="slide-left" data-aos-duration="2000" data-aos-once="true">I'M ADOPTING AN ADORABLE SHIBA INU!"</h3>
+        <h6 data-aos="slide-left" data-aos-duration="3000" data-aos-once="true">
+          <strong>사랑스러운 시바견 분양 중! 당신의 가정에 행복과 웃음을 불러올 작고 귀여운 시바견을 만나보세요!<br>
+            한 번 만나면 빠져나올 수 없는 사랑스러움과 애교로 가득찬 시바견을 지금 바로 분양해보세요! </strong>
+        </h6>
+        <div class="entire-content" data-aos="fade-up" data-aos-duration="3000" data-aos-once="true">
+  
+          <!-- 이미지 카루셀 -->
+  
+          <div class="content-carrousel">
+            <figure class="shadow"><img src="./images/shiba01.png" alt="Shiba Inu 01"></figure>
+            <figure class="shadow"><img src="./images/shiba01.png" alt="Shiba Inu 01"></figure>
+            <figure class="shadow"><img src="./images/shiba02.png" alt="Shiba Inu 02"></figure>
+            <figure class="shadow"><img src="./images/shiba03.png" alt="Shiba Inu 03"></figure>
+            <figure class="shadow"><img src="./images/shiba04.png" alt="Shiba Inu 04"></figure>
+            <figure class="shadow"><img src="./images/shiba05.png" alt="Shiba Inu 05"></figure>
+            <figure class="shadow"><img src="./images/shiba06.png" alt="Shiba Inu 06"></figure>
+            <figure class="shadow"><img src="./images/shiba07.png" alt="Shiba Inu 07"></figure>
+            <figure class="shadow"><img src="./images/shiba08.png" alt="Shiba Inu 08"></figure>
+            <figure class="shadow"><img src="./images/shiba09.png" alt="Shiba Inu 09"></figure>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 세 번째 섹션 -->
+
+  <section class="three">
+    <h2 class="visually-hidden">여백</h2>
+    <div class="container">
+      <div class="image-container">
+        <img src="images/Frame_3.png" alt="frame" data-aos="zoom-in" data-aos-duration="2000" data-aos-once="true">
+        <img src="images/Frame_4.png" alt="frame" data-aos="fade-left" data-aos-duration="3000" data-aos-once="true" class="overlay-image3">
+      </div>
+      <div class="bubble" data-aos="fade-right" data-aos-duration="4000" data-aos-once="true">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        
+    </div>
+  
+ </div>
+    
+  </section>
+
+  <!-- 네 번째 섹션 -->
+
+  <section class="four">
+    <h2 class="visually-hidden">여백</h2>
+    <div class="container">
+      <div class="image-container">
+        <img src="images/Frame_2.png" alt="frame" data-aos="slide-up" data-aos-duration="1000" data-aos-once="true">
+        <img src="images/3d.png" alt="3D image" data-aos="slide-up" data-aos-duration="3000" data-aos-once="true" class="overlay-image">
+        <img src="images/world-icon-png-3005_1.png" alt="world icon" data-aos="zoom-in" data-aos-duration="2000" data-aos-once="true" class="overlay-image2">
+        
+    </div>
+    
+         <button class="button4" data-aos="slide-right" data-aos-duration="3000" data-aos-once="true" onclick="redirectToSite()">
+  Click</button>
+      <div class="item-hints" data-aos="slide-left" data-aos-duration="3000" data-aos-once="true">
+        <div class="hint" data-position="4" data-aos="slide-left" data-aos-duration="3000" data-aos-once="true">
+          <span class="hint-radius"></span>
+          <span class="hint-dot">NFT</span>
+          <div class="hint-content do--split-children">
+            <p>NFTs are unique digital assets that are revolutionizing the art and collectibles market</p>
+          </div>
+        </div>
+      </div>
+      
+      <div class="socket" data-aos="fade-in" data-aos-duration="3000" data-aos-once="true">
+			<div class="gel center-gel">
+				<div class="hex-brick h1"></div>
+				<div class="hex-brick h2"></div>
+				<div class="hex-brick h3"></div>
+			</div>
+			<div class="gel c1 r1">
+				<div class="hex-brick h1"></div>
+				<div class="hex-brick h2"></div>
+				<div class="hex-brick h3"></div>
+			</div>
+			<div class="gel c2 r1">
+				<div class="hex-brick h1"></div>
+				<div class="hex-brick h2"></div>
+				<div class="hex-brick h3"></div>
+			</div>
+			<div class="gel c3 r1">
+				<div class="hex-brick h1"></div>
+				<div class="hex-brick h2"></div>
+				<div class="hex-brick h3"></div>
+			</div>
+			<div class="gel c4 r1">
+				<div class="hex-brick h1"></div>
+				<div class="hex-brick h2"></div>
+				<div class="hex-brick h3"></div>
+			</div>
+			<div class="gel c5 r1">
+				<div class="hex-brick h1"></div>
+				<div class="hex-brick h2"></div>
+				<div class="hex-brick h3"></div>
+			</div>
+			<div class="gel c6 r1">
+				<div class="hex-brick h1"></div>
+				<div class="hex-brick h2"></div>
+				<div class="hex-brick h3"></div>
+			</div>
+			
+			<div class="gel c7 r2">
+				<div class="hex-brick h1"></div>
+				<div class="hex-brick h2"></div>
+				<div class="hex-brick h3"></div>
+			</div>
+			
+			<div class="gel c8 r2">
+				<div class="hex-brick h1"></div>
+				<div class="hex-brick h2"></div>
+				<div class="hex-brick h3"></div>
+			</div>
+			<div class="gel c9 r2">
+				<div class="hex-brick h1"></div>
+				<div class="hex-brick h2"></div>
+				<div class="hex-brick h3"></div>
+			</div>
+			<div class="gel c10 r2">
+				<div class="hex-brick h1"></div>
+				<div class="hex-brick h2"></div>
+				<div class="hex-brick h3"></div>
+			</div>
+			<div class="gel c11 r2">
+				<div class="hex-brick h1"></div>
+				<div class="hex-brick h2"></div>
+				<div class="hex-brick h3"></div>
+			</div>
+			<div class="gel c12 r2">
+				<div class="hex-brick h1"></div>
+				<div class="hex-brick h2"></div>
+				<div class="hex-brick h3"></div>
+			</div>
+			<div class="gel c13 r2">
+				<div class="hex-brick h1"></div>
+				<div class="hex-brick h2"></div>
+				<div class="hex-brick h3"></div>
+			</div>
+			<div class="gel c14 r2">
+				<div class="hex-brick h1"></div>
+				<div class="hex-brick h2"></div>
+				<div class="hex-brick h3"></div>
+			</div>
+			<div class="gel c15 r2">
+				<div class="hex-brick h1"></div>
+				<div class="hex-brick h2"></div>
+				<div class="hex-brick h3"></div>
+			</div>
+			<div class="gel c16 r2">
+				<div class="hex-brick h1"></div>
+				<div class="hex-brick h2"></div>
+				<div class="hex-brick h3"></div>
+			</div>
+			<div class="gel c17 r2">
+				<div class="hex-brick h1"></div>
+				<div class="hex-brick h2"></div>
+				<div class="hex-brick h3"></div>
+			</div>
+			<div class="gel c18 r2">
+				<div class="hex-brick h1"></div>
+				<div class="hex-brick h2"></div>
+				<div class="hex-brick h3"></div>
+			</div>
+			<div class="gel c19 r3">
+				<div class="hex-brick h1"></div>
+				<div class="hex-brick h2"></div>
+				<div class="hex-brick h3"></div>
+			</div>
+			<div class="gel c20 r3">
+				<div class="hex-brick h1"></div>
+				<div class="hex-brick h2"></div>
+				<div class="hex-brick h3"></div>
+			</div>
+			<div class="gel c21 r3">
+				<div class="hex-brick h1"></div>
+				<div class="hex-brick h2"></div>
+				<div class="hex-brick h3"></div>
+			</div>
+			<div class="gel c22 r3">
+				<div class="hex-brick h1"></div>
+				<div class="hex-brick h2"></div>
+				<div class="hex-brick h3"></div>
+			</div>
+			<div class="gel c23 r3">
+				<div class="hex-brick h1"></div>
+				<div class="hex-brick h2"></div>
+				<div class="hex-brick h3"></div>
+			</div>
+			<div class="gel c24 r3">
+				<div class="hex-brick h1"></div>
+				<div class="hex-brick h2"></div>
+				<div class="hex-brick h3"></div>
+			</div>
+			<div class="gel c25 r3">
+				<div class="hex-brick h1"></div>
+				<div class="hex-brick h2"></div>
+				<div class="hex-brick h3"></div>
+			</div>
+			<div class="gel c26 r3">
+				<div class="hex-brick h1"></div>
+				<div class="hex-brick h2"></div>
+				<div class="hex-brick h3"></div>
+			</div>
+			<div class="gel c28 r3">
+				<div class="hex-brick h1"></div>
+				<div class="hex-brick h2"></div>
+				<div class="hex-brick h3"></div>
+			</div>
+			<div class="gel c29 r3">
+				<div class="hex-brick h1"></div>
+				<div class="hex-brick h2"></div>
+				<div class="hex-brick h3"></div>
+			</div>
+			<div class="gel c30 r3">
+				<div class="hex-brick h1"></div>
+				<div class="hex-brick h2"></div>
+				<div class="hex-brick h3"></div>
+			</div>
+			<div class="gel c31 r3">
+				<div class="hex-brick h1"></div>
+				<div class="hex-brick h2"></div>
+				<div class="hex-brick h3"></div>
+			</div>
+			<div class="gel c32 r3">
+				<div class="hex-brick h1"></div>
+				<div class="hex-brick h2"></div>
+				<div class="hex-brick h3"></div>
+			</div>
+			<div class="gel c33 r3">
+				<div class="hex-brick h1"></div>
+				<div class="hex-brick h2"></div>
+				<div class="hex-brick h3"></div>
+			</div>
+			<div class="gel c34 r3">
+				<div class="hex-brick h1"></div>
+				<div class="hex-brick h2"></div>
+				<div class="hex-brick h3"></div>
+			</div>
+			<div class="gel c35 r3">
+				<div class="hex-brick h1"></div>
+				<div class="hex-brick h2"></div>
+				<div class="hex-brick h3"></div>
+			</div>
+			<div class="gel c36 r3">
+				<div class="hex-brick h1"></div>
+				<div class="hex-brick h2"></div>
+				<div class="hex-brick h3"></div>
+			</div>
+			<div class="gel c37 r3">
+				<div class="hex-brick h1"></div>
+				<div class="hex-brick h2"></div>
+				<div class="hex-brick h3"></div>
+			</div>
+			
+      
+    </div>
+    </div>
+    
+  </section>
+
+  <!-- 다섯 번째 섹션 -->
+
+  <section class="five">
+    <h2 class="visually-hidden">여백</h2>
+    <div class="container" data-aos="fade-up" data-aos-duration="1000" data-aos-once="true">
+      <h1>HELLO SHIBA</h1>
+      <div class="card7">
+        <img src="images/japanese-shiba-inu-dogs-for-sale-beautiful-shiba-puppies-kc-help-with-transport-haugh-inverness-image-11.png" alt="shiba3">
+        <div class="card7__content">
+          <p class="card7__title">puppies for sale  </p>
+          <p class="card7__description">
+            Seeking a small family member to share love and responsibility with. Are you ready to enjoy the daily life with a delicate companion, filled with abundant love? The moments we share will create a daily life full of happiness </p>
+        </div>
+      </div>
+      <div class="card7">
+        <img src="images/FEJGZNTNYLEY.png" alt="shiba2">
+        <div class="card7__content">
+          <p class="card7__title">시바 입양</p>
+          <p class="card7__description">사랑과 책임감을 가지고 함께할 우리의 작은 가족원을 찾습니다. 섬세한 발걸음과 충만한 사랑을 가진 강아지와의 일상을 즐길 준비가 되셨나요? 함께하는 순간들이 행복으로 가득한 일상을 만들 것입니다.</p>
+        </div>
+      </div>
+      <div class="card7">
+        <img src="images/0747055f60ef36a6b26b9d5c2c6e6a89.png" alt="shiba1">
+        <div class="card7__content">
+          <p class="card7__title">柴犬の里親募集</p>
+          <p class="card7__description">愛と責任を持って一緒に過ごす小さな家族の一員を探しています。繊細な足跡と豊かな愛を持つワンちゃんとの日常を楽しむ準備はできていますか？一緒に過ごす瞬間が幸せに満ちた日常を作り出します。</p>
+        </div>
+      </div>
+      
+
+  </div>
+  </section>
+
+  <!-- 여섯 번째 섹션 -->
+
+  <section class="six">
+    <h2 class="visually-hidden">여백</h2>
+    <div class="container">
+      <div class="carousel" data-aos="slide-up" data-aos-duration="1000" data-aos-once="true">
+        <div class="list">
+
+          <!-- 첫 번째 아이템 -->
+
+          <div class="item">
+            <img src="images/img1.png" alt="이미지 1">
+            <div class="introduce">
+              <div class="title">赤シバ Aka shiba</div>
+              <div class="topic">적시바 </div>
+              <div class="des">
+                <!-- 20 lorem -->
+                적시바는 흔히 시바견을 생각하면 떠오르는 모색입니다
+                적색의 농도에따라 많은 차이가 있으며 붉은 적색을 띄는 모색이 가장 이쁜 모색이라 할수 있습니다.
+                간혹 황시바 황구라고 불르시는 분들이 계시지만 정확한 명칭은 적시바로 명시하고 있습니다.
+                시바견중 가장 많이 분포되어있는 모색으로 약 80%이상이며 전람회에서도 가장 많이 입상을 하는 모색입니다
+
+
+
+              </div>
+              <button class="seeMore">SEE MORE</button>
+            </div>
+            <div class="detail">
+              <div class="title">赤シバ Aka shiba</div>
+              <div class="des">
+                <!-- lorem 50 -->
+                외모: 적색 시바는 중형 개로서 털은 짧고 빛나는 레드 컬러를 가지고 있습니다. 그들은 강렬한 붉은색 코, 앞으로 향한 삼각형 모양의 귀, 미디움 사이즈의 몸과 다리를 가지고 있어
+                우아하고
+                매력적인 외모를 가지고 있습니다.
+                성격: 적색 시바는 재치 있고 똑똑하여 주인에게 충실하고 애정을 보입니다. 이들은 적극적이고 활동적인 성격을 가지고 있으며, 높은 지능과 호기심이 있습니다. 그들은 자주 운동과 정신적인
+                자극이 필요하므로 적절한 활동을 제공해주는 것이 중요합니다.
+                역사와 문화적 의미: 적색 시바는 일본에서 귀족적인 개로 알려져 있으며, 오래된 역사와 문화적인 의미를 지니고 있습니다. 일본에서는 시바견을 "신사견"이라고도 불리며, 그들은 용기,
+                충성심,
+                자주성과 같은 미덕을 상징하는 동물로 여겨집니다.
+              </div>
+              <div class="checkout">
+                <button>PARCEL OUT</button>
+                <button>CHECKOUT</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- 두 번째 아이템 -->
+
+          <div class="item">
+            <img src="images/img2.png" alt="이미지 2">
+            <div class="introduce">
+              <div class="title">黒井しば Kuroi Shiba</div>
+              <div class="topic">흑시바</div>
+              <div class="des">
+                <!-- 20 lorem -->
+                흑시바는 적시바 다음으로 분포가 많이되어있으며 일본에서보다 한국에서 정말 인기가 상승하고있는 매력적인 모색입니다.
+                또한 메노시타(눈밑 흰부분)도 외형을 만드는데 큰 요소중 하나입니다.
+
+              </div>
+              <button class="seeMore">SEE MORE</button>
+            </div>
+            <div class="detail">
+              <div class="title">黒井しば Kuroi Shiba
+                흑시바</div>
+              <div class="des">
+                외모: 흑시바는 중형견으로, 몸무게는 약 10kg에서 14kg 사이이며, 어깨 높이는 약 35cm에서 43cm 정도입니다. 그 특징적인 털 색상은 검은색이며, 귀, 얼굴, 다리 등 몇
+                가지
+                부위에 흰색 마크가 있을 수도 있습니다. 털은 짧고 밀집하여 관리하기 쉽습니다.
+                성격: 흑시바는 활발하고 재미있는 성격을 가지고 있습니다. 호기심이 많고 적극적이며, 주인과 가족들과의 상호 작용을 즐깁니다. 또한, 지능적이고 학습능력이 뛰어나기 때문에 훈련이 비교적
+                수월합니다. 예민하고 민첩한 성격이어서 민감한 주인의 심리나 몸짓에 잘 반응합니다.
+                운동: 흑시바는 활동적인 성격을 가지고 있기 때문에 많은 운동이 필요합니다. 매일 꾸준한 산책과 놀이 시간을 제공해야 합니다. 또한 지루함을 느끼지 않도록 인터렉티브한 장난감이나 퍼즐
+                플레이
+                등의 활동을 제공하는 것이 좋습니다.
+                관리: 흑시바의 털은 짧고 밀집하여 털빠짐이 적은 편입니다. 그러나 계절에 따라 털이 더 많이 나올 수 있으므로 주기적인 브러싱이 필요합니다. 또한, 귀를 깨끗하게 유지하고 발톱을
+                깎아줌으로써 건강을 유지할 수 있습니다.
+                건강: 흑시바는 일반적으로 건강한 종이지만, 유전적인 질환에 노출될 수 있습니다. 힙 및 팔꿈치 이형성증, 안구 질환 등이 흑시바에서 발생할 수 있는 유전적인 문제 중 일부입니다. 건강을
+                지속적으로 관찰하고, 필요한 예방 접종 및 정기적인 건강 검진을 받도록 해야 합니다.
+              </div>
+              <div class="checkout">
+                <button>PARCEL OUT</button>
+                <button>CHECKOUT</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- 세 번째 아이템 -->
+
+          <div class="item">
+            <img src="images/img3.png" alt="이미지 3">
+            <div class="introduce">
+              <div class="title">白柴 Shiro shiba</div>
+              <div class="topic">백시바</div>
+              <div class="des">
+                <!-- 20 lorem -->
+                희소성을 띄고있는 시바견으로 순백색보다는 크림색에 가깝습니다.
+                일반적으로 성장해가면서 귀나 등쪽에 옅은베이지색이나 크림색을 띄며 코는 핑크색이 됩니다.
+                예로부터 동양에서는 흰 동물을 성스럽다 생각했기 때문에 백시바 역시 행운을 가져다 준다하여 시바견켄넬에서 행운을위해 부적처럼 키우기도 합니다.
+              </div>
+              <button class="seeMore">SEE MORE</button>
+            </div>
+            <div class="detail">
+              <div class="title">白柴 Shiro shiba</div>
+              <div class="des">
+                <!-- lorem 50 -->
+                외모: 백시바는 중형견으로, 몸무게는 약 10kg에서 14kg 사이이며, 어깨 높이는 약 35cm에서 43cm 정도입니다. 그 특징적인 털 색상은 흰색이며, 귀, 얼굴, 다리 등에는 다른
+                색의 마크가 없는 순수한 흰색 털을 가지고 있습니다.
+                성격: 백시바는 활발하고 쾌활한 성격을 가지고 있습니다. 호기심이 많고 재미있는 성격이며, 주인과 가족들과의 상호 작용을 즐깁니다. 또한, 지능적이고 학습능력이 뛰어나기 때문에 훈련이
+                비교적
+                수월합니다.
+                운동: 백시바는 활동적인 성격을 가지고 있기 때문에 많은 운동이 필요합니다. 매일 꾸준한 산책과 놀이 시간을 제공해야 합니다. 또한, 지루함을 느끼지 않도록 인터렉티브한 장난감이나 퍼즐
+                플레이 등의 활동을 제공하는 것이 좋습니다.
+                관리: 백시바의 털은 중간 길이로, 털이 흰색이기 때문에 눈에 띄는 먼지나 오염이 쉽게 보일 수 있습니다. 주기적인 브러싱과 목욕으로 털의 깨끗함을 유지해야 합니다. 또한, 귀를 깨끗하게
+                유지하고 발톱을 깎아줌으로써 건강을 유지할 수 있습니다.
+                건강: 백시바는 일반적으로 건강한 종이지만, 유전적인 질환에 노출될 수 있습니다. 힙 및 팔꿈치 이형성증, 안구 질환 등이 백시바에서 발생할 수 있는 유전적인 문제 중 일부입니다. 건강을
+                지속적으로 관찰하고, 필요한 예방 접종 및 정기적인 건강 검진을 받도록 해야 합니다.
+              </div>
+
+              <div class="checkout">
+                <button>PARCEL OUT</button>
+                <button>CHECKOUT</button>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <div class="arrows">
+          <button id="prev">&lt;</button>
+          <button id="next">&gt;</button>
+        </div>
+          <button id="back">See All</button>
+        </div>
+      </div>
+  </section>
+  
+
+  <!-- 일곱 번째 섹션 -->
+
+  <section class="seven">
+    <h2 class="visually-hidden">여백</h2>
+    <div class="wrapper" data-aos="fade-up" data-aos-duration="3000" data-aos-once="true">
+      <div class="container">
+        <div class="image-cube">
+          <div class="front">
+              <img src="./images/image1.jpg" alt="첫 번째 이미지">
+            </div>
+            <div class="right">
+              <img src="./images/image2.jpg" alt="두 번째 이미지">
+            </div>
+            <div class="back">
+              <img src="./images/image3.jpg" alt="세 번째 이미지">
+            </div>
+            <div class="left">
+              <img src="./images/image4.jpg" alt="네 번째 이미지">
+            </div>
+        </div>
+      </div>
+    </div>
+    <div class="waviy">
+      <span style="--i:1">ㅇ</span>
+      <span style="--i:2">ㅣ</span>
+      <span style="--i:3">ㅅ</span>
+      <span style="--i:4">ㅣ</span>
+      <span style="--i:5">ㄴ</span>
+      <span style="--i:6">ㅇ</span>
+      <span style="--i:7">ㅜ</span>
+    </div>
+    <div class="main">
+      <div class="up">
+        <button id="instagramBtn" class="card1">
+          <svg class="instagram" fill-rule="nonzero" height="30px" width="30px" viewBox="0,0,256,256"
+            xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg">
+            <g style="mix-blend-mode: normal" text-anchor="start" font-size="none" font-weight="normal" font-family="none"
+              stroke-dashoffset="0" stroke-dasharray="" stroke-miterlimit="10" stroke-linejoin="miter"
+              stroke-linecap="butt" stroke-width="1" stroke="none" fill-rule="nonzero"> </g>
+              <g transform="scale(8,8)">
+                <path
+                  d="M11.46875,5c-3.55078,0 -6.46875,2.91406 -6.46875,6.46875v9.0625c0,3.55078 2.91406,6.46875 6.46875,6.46875h9.0625c3.55078,0 6.46875,-2.91406 6.46875,-6.46875v-9.0625c0,-3.55078 -2.91406,-6.46875 -6.46875,-6.46875zM11.46875,7h9.0625c2.47266,0 4.46875,1.99609 4.46875,4.46875v9.0625c0,2.47266 -1.99609,4.46875 -4.46875,4.46875h-9.0625c-2.47266,0 -4.46875,-1.99609 -4.46875,-4.46875v-9.0625c0,-2.47266 1.99609,-4.46875 4.46875,-4.46875zM21.90625,9.1875c-0.50391,0 -0.90625,0.40234 -0.90625,0.90625c0,0.50391 0.40234,0.90625 0.90625,0.90625c0.50391,0 0.90625,-0.40234 0.90625,-0.90625c0,-0.50391 -0.40234,-0.90625 -0.90625,-0.90625zM16,10c-3.30078,0 -6,2.69922 -6,6c0,3.30078 2.69922,6 6,6c3.30078,0 6,-2.69922 6,-6c0,-3.30078 -2.69922,-6 -6,-6zM16,12c2.22266,0 4,1.77734 4,4c0,2.22266 -1.77734,4 -4,4c-2.22266,0 -4,-1.77734 -4,-4c0,-2.22266 1.77734,-4 4,-4z">
+                </path>
+            </g>
+          </svg>
+        </button>
+        <button id="facebookBtn" class="card2">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" height="24" class="facebook"
+            width="24">
+            <path
+              d="M9.19795 21.5H13.198V13.4901H16.8021L17.198 9.50977H13.198V7.5C13.198 6.94772 13.6457 6.5 14.198 6.5H17.198V2.5H14.198C11.4365 2.5 9.19795 4.73858 9.19795 7.5V9.50977H7.19795L6.80206 13.4901H9.19795V21.5Z">
+            </path>
+          </svg>
+        </button>
+      </div>
+      <div class="down">
+        <button id="whatsappBtn" class="card3">
+          <svg width="30" height="30" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" class="whatsapp">
+            <path
+              d="M19.001 4.908A9.817 9.817 0 0 0 11.992 2C6.534 2 2.085 6.448 2.08 11.908c0 1.748.458 3.45 1.321 4.956L2 22l5.255-1.377a9.916 9.916 0 0 0 4.737 1.206h.005c5.46 0 9.908-4.448 9.913-9.913A9.872 9.872 0 0 0 19 4.908h.001ZM11.992 20.15A8.216 8.216 0 0 1 7.797 19l-.3-.18-3.117.818.833-3.041-.196-.314a8.2 8.2 0 0 1-1.258-4.381c0-4.533 3.696-8.23 8.239-8.23a8.2 8.2 0 0 1 5.825 2.413 8.196 8.196 0 0 1 2.41 5.825c-.006 4.55-3.702 8.24-8.24 8.24Zm4.52-6.167c-.247-.124-1.463-.723-1.692-.808-.228-.08-.394-.123-.556.124-.166.246-.641.808-.784.969-.143.166-.29.185-.537.062-.247-.125-1.045-.385-1.99-1.23-.738-.657-1.232-1.47-1.38-1.716-.142-.247-.013-.38.11-.504.11-.11.247-.29.37-.432.126-.143.167-.248.248-.413.082-.167.043-.31-.018-.433-.063-.124-.557-1.345-.765-1.838-.2-.486-.404-.419-.557-.425-.142-.009-.309-.009-.475-.009a.911.911 0 0 0-.661.31c-.228.247-.864.845-.864 2.067 0 1.22.888 2.395 1.013 2.56.122.167 1.742 2.666 4.229 3.74.587.257 1.05.408 1.41.523.595.19 1.13.162 1.558.1.475-.072 1.464-.6 1.673-1.178.205-.58.205-1.075.142-1.18-.061-.104-.227-.165-.475-.29Z">
+            </path>
+          </svg>
+        </button>
+        <button id="gmailBtn" class="card4">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" height="24" class="gmail" width="24">
+            <path
+              d="M6 12C6 15.3137 8.68629 18 12 18C14.6124 18 16.8349 16.3304 17.6586 14H12V10H21.8047V14H21.8C20.8734 18.5645 16.8379 22 12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C15.445 2 18.4831 3.742 20.2815 6.39318L17.0039 8.68815C15.9296 7.06812 14.0895 6 12 6C8.68629 6 6 8.68629 6 12Z">
+            </path>
+          </svg>
+        </button>
+      </div>
+    </div>
+    <div class="card-id567">
+      <svg shape-rendering="crispEdges" viewBox="0 -0.5 29 29" xmlns="http://www.w3.org/2000/svg">
+        <path d="M0 0h7M8 0h2M14 0h1M16 0h5M22 0h7M0 1h1M6 1h1M13 1h1M17 1h2M22 1h1M28 1h1M0 2h1M2 2h3M6 2h1M8 2h1M11 2h4M18 2h1M20 2h1M22 2h1M24 2h3M28 2h1M0 3h1M2 3h3M6 3h1M8 3h2M11 3h1M13 3h1M15 3h5M22 3h1M24 3h3M28 3h1M0 4h1M2 4h3M6 4h1M8 4h4M13 4h1M15 4h1M19 4h1M22 4h1M24 4h3M28 4h1M0 5h1M6 5h1M9 5h1M12 5h2M17 5h4M22 5h1M28 5h1M0 6h7M8 6h1M10 6h1M12 6h1M14 6h1M16 6h1M18 6h1M20 6h1M22 6h7M9 7h1M11 7h1M15 7h6M0 8h4M6 8h1M8 8h1M13 8h2M17 8h3M21 8h1M24 8h3M28 8h1M2 9h1M4 9h2M7 9h1M9 9h1M14 9h1M16 9h1M19 9h2M22 9h3M28 9h1M0 10h5M6 10h1M8 10h1M13 10h1M16 10h1M18 10h1M20 10h1M22 10h3M26 10h2M1 11h1M3 11h2M7 11h1M11 11h4M16 11h1M18 11h1M20 11h5M28 11h1M1 12h3M5 12h2M9 12h1M11 12h1M13 12h5M19 12h1M25 12h2M0 13h2M3 13h3M8 13h1M10 13h2M14 13h1M16 13h2M19 13h2M22 13h2M26 13h3M0 14h1M2 14h1M4 14h3M9 14h2M12 14h1M14 14h1M16 14h1M19 14h3M23 14h2M26 14h3M0 15h2M3 15h2M8 15h1M12 15h1M14 15h3M20 15h1M22 15h3M27 15h1M0 16h1M2 16h3M6 16h1M10 16h2M18 16h1M20 16h2M24 16h2M27 16h1M1 17h2M4 17h1M7 17h3M12 17h1M14 17h2M18 17h1M20 17h2M23 17h1M25 17h3M0 18h1M3 18h1M6 18h1M8 18h5M15 18h2M23 18h1M26 18h1M2 19h4M12 19h1M14 19h1M16 19h2M19 19h3M26 19h1M1 20h1M3 20h1M6 20h7M14 20h2M17 20h10M8 21h3M12 21h1M18 21h1M20 21h1M24 21h5M0 22h7M9 22h6M19 22h2M22 22h1M24 22h2M27 22h1M0 23h1M6 23h1M9 23h1M13 23h3M18 23h1M20 23h1M24 23h2M27 23h1M0 24h1M2 24h3M6 24h1M10 24h1M12 24h1M14 24h4M20 24h5M26 24h3M0 25h1M2 25h3M6 25h1M8 25h1M11 25h2M15 25h2M19 25h3M24 25h2M28 25h1M0 26h1M2 26h3M6 26h1M8 26h1M10 26h2M13 26h1M21 26h1M23 26h1M26 26h1M28 26h1M0 27h1M6 27h1M8 27h1M11 27h1M14 27h1M16 27h1M18 27h3M23 27h1M25 27h1M27 27h1M0 28h7M8 28h1M14 28h3M19 28h2M25 28h1M27 28h1" stroke="#000000"></path>
+      </svg>
+      
+      <div class="prompt-id567">
+        <div class="token-container">
+    
+        <svg viewBox="0 0 24 24" fill="none" class="creator-points" xmlns="http://www.w3.org/2000/svg"><path d="M19.4133 4.89862L14.5863 2.17544C12.9911 1.27485 11.0089 1.27485 9.41368 2.17544L4.58674 4.89862C2.99153 5.7992 2 7.47596 2 9.2763V14.7235C2 16.5238 2.99153 18.2014 4.58674 19.1012L9.41368 21.8252C10.2079 22.2734 11.105 22.5 12.0046 22.5C12.6952 22.5 13.3874 22.3657 14.0349 22.0954C14.2204 22.018 14.4059 21.9273 14.5872 21.8252L19.4141 19.1012C19.9765 18.7831 20.4655 18.3728 20.8651 17.8825C21.597 16.9894 22 15.8671 22 14.7243V9.27713C22 7.47678 21.0085 5.7992 19.4133 4.89862ZM4.10784 14.7235V9.2763C4.10784 8.20928 4.6955 7.21559 5.64066 6.68166L10.4676 3.95848C10.9398 3.69152 11.4701 3.55804 11.9996 3.55804C12.5291 3.55804 13.0594 3.69152 13.5324 3.95848L18.3593 6.68166C19.3045 7.21476 19.8922 8.20928 19.8922 9.2763V9.75997C19.1426 9.60836 18.377 9.53091 17.6022 9.53091C14.7929 9.53091 12.1041 10.5501 10.0309 12.3999C8.36735 13.8847 7.21142 15.8012 6.68783 17.9081L5.63981 17.3165C4.69466 16.7834 4.10699 15.7897 4.10699 14.7235H4.10784ZM10.4676 20.0413L8.60933 18.9924C8.94996 17.0479 9.94402 15.2665 11.4515 13.921C13.1353 12.4181 15.3198 11.5908 17.6022 11.5908C18.3804 11.5908 19.1477 11.6864 19.8922 11.8742V14.7235C19.8922 15.2278 19.7589 15.7254 19.5119 16.1662C18.7615 15.3596 17.6806 14.8528 16.4783 14.8528C14.2136 14.8528 12.3781 16.6466 12.3781 18.8598C12.3781 19.3937 12.4861 19.9021 12.68 20.3676C11.9347 20.5316 11.1396 20.4203 10.4684 20.0413H10.4676Z" fill="currentColor"></path></svg>
+        </div>
+        <div class="blurry-splash"></div>
+        <p>UI/UX<br><span class="bold-567">design</span> </p>
+
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="typing-demo">
+      <div class="text.left">My UI/UX-Portfolio-01.</div>
+    </div>
+    <div class="text.center">LEESINWOO</div>
+    <div class="text.right">stony36@naver.com</div>
+
+  </footer>
+
+  <script>
+    function redirectToSite() {
+      // 여기에 이동하고자 하는 사이트의 URL을 넣어주세요
+      window.location.href = 'https://upbit.com/nft/?gclid=Cj0KCQiAwbitBhDIARIsABfFYII-vYUdbhcjjyF3G4VyQK-y7HWBWR-ubOZvpDbrlZr3NlxgfpBAAgkaAkRnEALw_wcB&utm_campaign=sa_keyword_pc&utm_content=test_Category&utm_medium=cpc&utm_source=google&utm_term=nft';
+    }
+  </script>
+  
+
+
+  <script>
+
+  const $icon = document.querySelector('.icon');
+  const $arrow = document.querySelector('.arrow1');
+  
+ 
+    $arrow.animate([
+      {left: '0'},
+      {left: '10px'},
+      {left: '0'}
+    ],{
+      duration: 700,
+      iterations: Infinity
+    });
+  
+</script>
+
+  <!-- AOS 라이브러리 스크립트 추가 -->
+
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js" integrity="sha384-rh1VHi5ksDzn3cl5GViWlBivvmhGW3AJ8vK67mQOFvFdf5i6tBi4mF/VQOemObU5" crossorigin="anonymous"></script>
+  <!-- AOS 초기화 스크립트 -->
+
+  <script>
+    AOS.init({
+      duration: 3000,
+      once: false,
+    });
+  </script>
+
+  <!-- 네비게이션 바 숨김/표시 스크롤 이벤트 스크립트 -->
+
+  <script>
+    const navbar = document.querySelector('.navbar');
+    let lastScrollTop = 0;
+
+    // 스크롤 이벤트를 처리하는 함수
+    window.addEventListener('scroll', () => {
+      const scrollTop = window.scrollY;
+
+      // 사용자가 위로 또는 아래로 스크롤 중인지 확인
+      if (scrollTop > lastScrollTop) {
+        // 아래로 스크롤 중이면 네비게이션 바를 숨김
+        navbar.classList.add('navbar-hidden');
+      } else {
+
+        navbar.classList.remove('navbar-hidden');
+      }
+
+      // 최근 스크롤 위치를 업데이트
+      lastScrollTop = scrollTop;
+    });
+  </script>
+
+  <!-- 소셜 미디어 버튼 클릭 이벤트 스크립트 -->
+
+  <script>
+    document.getElementById("instagramBtn").addEventListener("click", function () {
+      window.location.href = "https://www.instagram.com/"; // Instagram 페이지 URL로 변경
+    });
+
+    document.getElementById("facebookBtn").addEventListener("click", function () {
+      window.location.href = "https://www.facebook.com/"; // Facebook 페이지 URL로 변경
+    });
+
+    document.getElementById("whatsappBtn").addEventListener("click", function () {
+      window.location.href = "https://web.whatsapp.com/"; // WhatsApp 페이지 URL로 변경
+    });
+
+    document.getElementById("gmailBtn").addEventListener("click", function () {
+      window.location.href = "https://mail.google.com/"; // Gmail 페이지 URL로 변경
+    });
+  </script>
+
+  <!-- Three.js, GSAP, 사용자 정의 스크립트 등의 추가 스크립트 -->
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/0.146.0/three.min.js"></script>
+  <script src="https://unpkg.com/three@0.146.0/examples/js/loaders/GLTFLoader.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"></script>
+  <script src="./js/script.js"></script>
+  <script src="js/custom-cursor.js"></script>
+  <script src="./js/slider.js"></script>
+  <script src="./js/slider2.js"></script>
+
+
+</body>
+
+</html>
