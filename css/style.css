@@ -183,7 +183,7 @@ h3 {
 h4 {
     margin: 0;
     padding: 0;
-    color: #000000;
+    color: #ffffff;
     box-sizing: border-box;
     margin-top: 10px;
 }
@@ -402,7 +402,7 @@ z-index: 9999999999999999999999;}
   height: 4px;
   width: 100%;
   border-radius: 10px;
-  background:   #000000;
+  background:   #ffffff;
 }
 
 .nav-container .hamburger-lines .line1 {
@@ -610,7 +610,10 @@ img{
   top: 20px; /* 수정된 값 */
   left: 50%;
   transform: translateX(-50%);
-  background: rgba(255, 190, 152, 0.9); /* 수정된 값 */
+  background: rgba(85, 85, 85, 0.2);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(10px);
   padding: 0 10px; /* 크기를 조정할 수 있는 패딩 값으로 수정 */
   height: 40px; /* 크기를 조정할 수 있는 높이 값으로 수정 */
   overflow: hidden;
