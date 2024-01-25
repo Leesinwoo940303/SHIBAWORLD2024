@@ -49,6 +49,9 @@
 
           <div class="menu-items">
             <ul>
+		     <div class="search-box">
+                <input type="text" placeholder=" "/><span></span>
+              </div>      
               <li><a href="#">HOME</a></li>
               <li><a href="#">ABOUT</a></li>
               <li><a href="#">BLOG</a></li>
@@ -694,7 +697,17 @@
     <div class="text.right">stony36@naver.com</div>
 
   </footer>
+<script>
+  'use strict';
 
+var searchBox = document.querySelectorAll('.search-box input[type="text"] + span');
+
+searchBox.forEach(elm => {
+  elm.addEventListener('click', () => {
+    elm.previousElementSibling.value = '';
+  });
+});
+</script>
   <script>
     function redirectToSite() {
       // 여기에 이동하고자 하는 사이트의 URL을 넣어주세요
