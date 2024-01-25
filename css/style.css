@@ -72,7 +72,7 @@ section .container {
 section.zero .container {
   z-index: 999999;
 }
-
+.zero{  z-index: 999999; }
 section.one .container {
   z-index: 999999;
 }
@@ -2396,8 +2396,8 @@ animation-iteration-count: infinite;
 
 .icon {
   position: absolute;
-  top: 60%;
-  left: 30%; /* 좌측으로 이동시키는 값입니다. 필요에 따라 조절해주세요. */
+  top: 90%;
+  left: 50%; /* 좌측으로 이동시키는 값입니다. 필요에 따라 조절해주세요. */
   transform: translate(-50%,-50%) rotate(90deg); /* 60도로 회전시키는 값입니다. 필요에 따라 조절해주세요. */
   width: 80px;
   height: 60px;
