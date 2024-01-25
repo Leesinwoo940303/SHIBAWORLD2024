@@ -697,16 +697,22 @@
     <div class="text.right">stony36@naver.com</div>
 
   </footer>
-<script>
-  'use strict';
+<!-- 네비게이션바 스크롤 이벤트 -->
+  <script>
 
-var searchBox = document.querySelectorAll('.search-box input[type="text"] + span');
-
-searchBox.forEach(elm => {
-  elm.addEventListener('click', () => {
-    elm.previousElementSibling.value = '';
-  });
-});
+  const $icon = document.querySelector('.icon');
+  const $arrow = document.querySelector('.arrow1');
+  
+ 
+    $arrow.animate([
+      {left: '0'},
+      {left: '10px'},
+      {left: '0'}
+    ],{
+      duration: 700,
+      iterations: Infinity
+    });
+  
 </script>
   <script>
     function redirectToSite() {
