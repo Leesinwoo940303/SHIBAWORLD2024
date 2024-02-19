@@ -32,7 +32,8 @@ body {
 
 /* Body 로딩 시 스타일링 */
 body.loaded {
-    overflow: auto;
+ overflow: auto;
+    overflow-x: hidden;
 }
 
 /* WebGL 요소 스타일링 */
