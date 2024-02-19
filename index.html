@@ -113,8 +113,8 @@
 
   <!-- 여백 -->
   <section class="zero">
-   <script type="module" src="https://unpkg.com/@splinetool/viewer@1.0.34/build/spline-viewer.js"></script>
-<spline-viewer url="https://prod.spline.design/5NULGLEYfk8r02qw/scene.splinecode"></spline-viewer>
+    <canvas id="canvas3d"></canvas>
+    <a class="logo" href="https://spline.design"></a>
     <div class="icon">
       <div class="arrow1"></div>
     </div>
@@ -698,6 +698,20 @@
 
   </footer>
 
+
+  <script async src="https://unpkg.com/es-module-shims@1.3.6/dist/es-module-shims.js"></script>
+    <script type="importmap">
+      {
+        "imports": {
+          "@splinetool/runtime": "https://unpkg.com/@splinetool/runtime@1.0.53/build/runtime.js"
+        }
+      }
+    </script>
+    <script type="module" src="./css/src/main.js"></script>
+
+
+
+
   <script>
     function redirectToSite() {
       // 여기에 이동하고자 하는 사이트의 URL을 넣어주세요
@@ -796,3 +810,4 @@
 </body>
 
 </html>
+
